@@ -8,6 +8,11 @@ pipeline {
                 sh 'npm install' 
             }
         }
+        stage('Run') { 
+            steps {
+                sh 'npm run start' 
+            }
+        }
     }
 }
 
