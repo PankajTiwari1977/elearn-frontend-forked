@@ -7,10 +7,10 @@ pipeline {
             steps {
                 sh 'npm install' 
             }
-        }pwd
+        }
         stage('Test') { 
             steps {
-                sh 'npm test' 
+                sh 'npm run test' 
             }
         }
     }
